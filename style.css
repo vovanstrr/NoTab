@@ -1,25 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,600;1,600&display=swap');
-
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: black;
     font-family: 'Noto Sans', sans-serif;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif
 }
 
-.header {
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.header {}
+
+p {
+    color: #fff
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* gap расстояние между элементами в flexbox модели */
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header__container {
     display: flex;
     align-items: center;
     gap: 110px;
 }
 
-.logo {
+.header__logo {}
+
+.logo__img {}
+
+.logo__text {}
+
+.header_login {
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
-/* 
-Avenir, sans-serif 
-*/
+
+.welcome__title {
+    color: #fff
+}
+
+.welcome__text {
+    
+}
