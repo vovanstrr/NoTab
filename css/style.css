@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {}
+
+p {
+    color: #fff;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* gap расстояние между элементами в flexbox модели */
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.header__logo {}
+
+.logo__img {}
+
+.logo__text {}
+
+.header_login {
+    display: flex;
+    gap: 12px;
+}
+main {
+    margin-top: -50px;
+}
+/* WELCOME */
+
+.welcome__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome__desc {
+    padding-left: 100px;
+}
+
+.welcome__title {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 109%;
+    margin-bottom: 130px;
+
+}
+
+.welcome__text {
+    position: relative;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 1.25rem;
+
+    /* отступ слева */
+    padding-left: 130px;
+    width: 380px;
+
+}
+
+.welcome__text::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 0px;
+    bottom: 50px;
+
+    border-radius: 100%;
+    /* fill: rgba(96, 92, 234, 0.5);
+    filter: blur(100px) */
+    background-image: url('/img/round.svg');
+}
+
+.welcome__text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+
+    width: 130px;
+    height: 4px;
+    transform: rotate(121deg);
+    background-color: #fff
+}
+
+/* content: "" - указали пустой контент что бы псевдоэлемент сработал */
+.welcome__img {
+    width: 20.81rem;
+    height: 41.75rem;
+}
+
+.weclome__container {
+    position: relative;
+}
+
+.weclome__container::after {
+    content: "";
+    width: 660px;
+    height: 190px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/img/dg-weclome.svg')
+
+}
+
+.cta__text {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 2.19rem;
+    line-height: 200%;
+    padding-left: 130px;
+}
+
+.welcome__cta {
+    font-weight: 700;
+    font-size: 2.19rem;
+    line-height: 200%;
+}
