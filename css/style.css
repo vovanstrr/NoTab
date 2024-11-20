@@ -67,6 +67,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 80px;
 }
 
 .welcome__desc {
@@ -133,12 +134,29 @@ main {
 .weclome__container::after {
     content: "";
     width: 660px;
-    height: 190px;
+    height: 790px;
 
+    /* display: block; */
     position: absolute;
-    right: 0;
-    top: 0;
-    background-image: url('/img/dg-weclome.svg')
+    right: -180px;
+    top: -140px;
+    background-image: url('/img/dg-weclome.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+
+
+}
+
+.welcome__cta  {
+    padding-right: 60px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
