@@ -112,9 +112,11 @@ main {
     bottom: 50px;
 
     border-radius: 100%;
-    /* fill: rgba(96, 92, 234, 0.5);
-    filter: blur(100px) */
-    background-image: url('/img/round.svg');
+    /* fill: rgba(96, 92, 234, 0.5); */
+    filter: blur(50px);
+    opacity: 0.7; 
+    background: rgba(96, 92, 234, 0.5);
+    /* background-image: url('/img/round.svg'); */
 }
 
 .welcome__text::after {
@@ -189,30 +191,33 @@ main {
 /* MISSION */
 
 .mission {
-
-}
-
-.container {
-
+/* padding: 150px 0; */
 }
 
 .mission__container {
 position: relative;
+padding: 150px 85px 150px 0px;
 }
 
 .mission__img {
-    transform: rotate(90deg) translate(-50%);
+    transform: rotate(90deg) translate(-43%);
     position: absolute;
-    /* top: 0; */
+    width: 31.12rem;
+    height: 62.44rem;
+    /* right: 50%; */
+    top: 0;
+    z-index: -1;
 }
 
 .mission__desc {
     display: block;
     margin-left: auto;
     width: 320px;
+    padding-right: 84px;
 }
 
 .mission__title {
+    position: relative;
     font-family: var(--font3);
     font-weight: 700;
     font-size: 3.19rem;
@@ -223,4 +228,23 @@ position: relative;
     /* font-family: var(--third-family); */
     font-weight: 400;
     font-size: 1.12rem;
+    
+}
+
+.mission__text::after {
+    content: "";
+    position: absolute;
+    /* border-radius: 100%; */
+    width: 85px;
+    height: 85px;
+
+    right: 55px;
+    top: 7px;
+    background:#f101bf;
+    opacity: 0.7;
+    
+    z-index: -1;
+    /* fill: #f101bf; */
+    filter: blur(50px);
+    /* background-image: url('/img/round_mission.svg'); */
 }
