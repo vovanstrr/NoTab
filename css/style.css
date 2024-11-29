@@ -308,13 +308,15 @@ main {
 /* Footer */
 
 .footer {
-    padding: 50px 0;
+    padding: 100px 0 50px;
 }
 
-.footer__container {}
+.footer__container {
+    position: relative;
+}
 
 .footer__container::before {
-    content: "";
+    content: "123";
     position: absolute;
     z-index: -1;
     width: 25.38rem;
@@ -324,6 +326,7 @@ main {
     background: linear-gradient(41deg, #f101bf 0%, #06f 100%);
     transform: rotate(-6deg);
     opacity: 0.3;
+    /* background-color:#f101bf */
 }
 
 .footer__cta {
